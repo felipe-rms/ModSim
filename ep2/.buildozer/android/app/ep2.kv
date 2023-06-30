@@ -1,0 +1,68 @@
+<Ep2>
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size: root.width, root.height
+        padding: 5
+        spacing: 10
+
+        BoxLayout:
+            spacing: 5
+            size_hint_x: .1
+            orientation: 'vertical'
+            BotaoVertical:
+                text: "Acelerômetro"
+                id: load_file
+                font_size: 32
+                disabled: False
+                on_release: root.start()
+
+            BotaoVertical:
+                text: "Ler dados"
+                id: load_file2
+                font_size: 32
+                on_release: root.stop()
+                
+
+
+        BoxLayout:
+            orientation:'vertical'
+            size_hint_x: .9
+            
+            BoxLayout:
+                id: box
+                size_hint_y: .9
+                pos_hint: {'top': 1}
+            
+            BoxLayout:
+                size_hint_y: .1
+                Button:
+                    text: "Start"
+                    id: start_button
+                    font_size: 32
+                    on_release: root.start()
+                    disabled: False
+                
+                Button:
+                    text:"Stop"
+                    font_size: 32
+                    on_release: root.stop()
+                
+                Button:
+                    text: "Clear"
+                    font_size: 32
+                    on_release: root.clear_plot()
+
+<BotaoVertical@ButtonBehavior+Label>:
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 0.35
+        Rectangle:
+            pos: self.pos
+            size: self.width, self.height
+        PushMatrix
+        Rotate:
+            angle: 90
+            origin: self.center
+    canvas.after:
+        PopMatrix    

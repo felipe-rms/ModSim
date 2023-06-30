@@ -1,0 +1,10 @@
+prefix=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86__ndk_target_21/jpeg/install
+exec_prefix=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86__ndk_target_21/jpeg/install
+libdir=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86__ndk_target_21/jpeg/install/lib
+includedir=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86__ndk_target_21/jpeg/install/include
+
+Name: libturbojpeg
+Description: A SIMD-accelerated JPEG codec that provides the TurboJPEG API
+Version: 2.0.1
+Libs: -L${libdir} -lturbojpeg
+Cflags: -I${includedir}

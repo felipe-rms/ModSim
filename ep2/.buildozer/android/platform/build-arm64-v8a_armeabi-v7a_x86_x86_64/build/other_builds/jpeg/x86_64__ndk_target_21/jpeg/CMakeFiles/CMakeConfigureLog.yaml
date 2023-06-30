@@ -1,0 +1,1064 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The target system is: Android - 1 - x86_64
+      The host system is: Linux - 6.3.5-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang 
+      Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security;
+      Id flags: -c;--target=x86_64-none-linux-android21 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is Clang, found in:
+        /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf832/fast && make -j8  -f CMakeFiles/cmTC_cf832.dir/build.make CMakeFiles/cmTC_cf832.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y'
+        Building C object CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+        Target: x86_64-none-linux-android21
+        Thread model: posix
+        InstalledDir: /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin
+         (in-process)
+         "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple x86_64-none-linux-android21 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y -resource-dir /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu
+        ignoring nonexistent directory "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include
+         /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include
+         /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android
+         /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+        End of search list.
+        Linking C executable cmTC_cf832
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf832.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -o cmTC_cf832 
+        Android (8490178, based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)
+        Target: x86_64-none-linux-android21
+        Thread model: posix
+        InstalledDir: /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin
+         "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie --warn-shared-textrel -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_cf832 /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/x86_64 -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+          add: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+          add: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+          add: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        end of search list found
+        collapse include dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+        collapse include dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+        collapse include dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+        collapse include dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        implicit include dirs: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include;/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include;/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android;/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y]
+        ignore line: []
+        ignore line: [Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cf832/fast && make -j8  -f CMakeFiles/cmTC_cf832.dir/build.make CMakeFiles/cmTC_cf832.dir/build]
+        ignore line: [make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y']
+        ignore line: [Building C object CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+        ignore line: [Target: x86_64-none-linux-android21]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple x86_64-none-linux-android21 -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y -resource-dir /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6 -dependency-file CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include -internal-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-aVhM9y -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6git default target x86_64-unknown-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include]
+        ignore line: [ /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+        ignore line: [ /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+        ignore line: [ /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_cf832]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf832.dir/link.txt --verbose=1]
+        ignore line: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl --build-id=sha1 -Wl --no-rosegment -Wl --fatal-warnings -Wl --gc-sections -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o -o cmTC_cf832 ]
+        ignore line: [Android (8490178  based on r450784d) clang version 14.0.6 (https://android.googlesource.com/toolchain/llvm-project 4c603efb0cca074e9238af8b4106c30add4418f6)]
+        ignore line: [Target: x86_64-none-linux-android21]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin]
+        link line: [ "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld" --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie --warn-shared-textrel -z now -z relro --hash-style=both --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_cf832 /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/x86_64 -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21 -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --fatal-warnings --gc-sections --no-undefined --gc-sections CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o]
+          arg [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/ld] ==> ignore
+          arg [--sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+          arg [-pie] ==> ignore
+          arg [--warn-shared-textrel] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=both] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker64] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_cf832] ==> ignore
+          arg [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o] ==> obj [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o]
+          arg [-L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/x86_64] ==> dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/x86_64]
+          arg [-L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21] ==> dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21]
+          arg [-L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+          arg [-L/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+          arg [--build-id=sha1] ==> ignore
+          arg [--no-rosegment] ==> ignore
+          arg [--fatal-warnings] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [--no-undefined] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [CMakeFiles/cmTC_cf832.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a]
+          arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+          arg [-ldl] ==> lib [dl]
+          arg [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o] ==> obj [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o]
+        remove lib [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a]
+        remove lib [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/libclang_rt.builtins-x86_64-android.a]
+        collapse library dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/x86_64] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/x86_64]
+        collapse library dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21]
+        collapse library dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+        collapse library dir [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+        implicit objs: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtbegin_dynamic.o;/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21/crtend_android.o]
+        implicit dirs: [/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/lib/linux/x86_64;/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/21;/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android;/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "CMakeLists.txt:353 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-yXXJ22"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-yXXJ22"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-yXXJ22
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_69f33/fast && make -j8  -f CMakeFiles/cmTC_69f33.dir/build.make CMakeFiles/cmTC_69f33.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-yXXJ22'
+        Building C object CMakeFiles/cmTC_69f33.dir/CheckIncludeFile.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_69f33.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_69f33.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_69f33.dir/CheckIncludeFile.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-yXXJ22/CheckIncludeFile.c
+        Linking C executable cmTC_69f33
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69f33.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_69f33.dir/CheckIncludeFile.c.o -o cmTC_69f33  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-yXXJ22'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:253 (check_include_file)"
+      - "CMakeLists.txt:353 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7Byx9L"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7Byx9L"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7Byx9L
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_60ef9/fast && make -j8  -f CMakeFiles/cmTC_60ef9.dir/build.make CMakeFiles/cmTC_60ef9.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7Byx9L'
+        Building C object CMakeFiles/cmTC_60ef9.dir/CheckIncludeFile.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_60ef9.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_60ef9.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_60ef9.dir/CheckIncludeFile.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7Byx9L/CheckIncludeFile.c
+        Linking C executable cmTC_60ef9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60ef9.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_60ef9.dir/CheckIncludeFile.c.o -o cmTC_60ef9  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7Byx9L'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFile.cmake:95 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:254 (check_include_file)"
+      - "CMakeLists.txt:353 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-kAcmh8"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-kAcmh8"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-kAcmh8
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9aa5b/fast && make -j8  -f CMakeFiles/cmTC_9aa5b.dir/build.make CMakeFiles/cmTC_9aa5b.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-kAcmh8'
+        Building C object CMakeFiles/cmTC_9aa5b.dir/CheckIncludeFile.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_9aa5b.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_9aa5b.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_9aa5b.dir/CheckIncludeFile.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-kAcmh8/CheckIncludeFile.c
+        Linking C executable cmTC_9aa5b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aa5b.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_9aa5b.dir/CheckIncludeFile.c.o -o cmTC_9aa5b  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-kAcmh8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:353 (check_type_size)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9dlpfa"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9dlpfa"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_SIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9dlpfa
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c3028/fast && make -j8  -f CMakeFiles/cmTC_c3028.dir/build.make CMakeFiles/cmTC_c3028.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9dlpfa'
+        Building C object CMakeFiles/cmTC_c3028.dir/SIZE_T.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_c3028.dir/SIZE_T.c.o -MF CMakeFiles/cmTC_c3028.dir/SIZE_T.c.o.d -o CMakeFiles/cmTC_c3028.dir/SIZE_T.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9dlpfa/SIZE_T.c
+        Linking C executable cmTC_c3028
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3028.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_c3028.dir/SIZE_T.c.o -o cmTC_c3028  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9dlpfa'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:354 (check_type_size)"
+    checks:
+      - "Check size of unsigned long"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-umAR65"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-umAR65"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_UNSIGNED_LONG"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-umAR65
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1cfe9/fast && make -j8  -f CMakeFiles/cmTC_1cfe9.dir/build.make CMakeFiles/cmTC_1cfe9.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-umAR65'
+        Building C object CMakeFiles/cmTC_1cfe9.dir/UNSIGNED_LONG.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_1cfe9.dir/UNSIGNED_LONG.c.o -MF CMakeFiles/cmTC_1cfe9.dir/UNSIGNED_LONG.c.o.d -o CMakeFiles/cmTC_1cfe9.dir/UNSIGNED_LONG.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-umAR65/UNSIGNED_LONG.c
+        Linking C executable cmTC_1cfe9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1cfe9.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_1cfe9.dir/UNSIGNED_LONG.c.o -o cmTC_1cfe9  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-umAR65'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:357 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BUILTIN_CTZL"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ETVvUE"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ETVvUE"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_BUILTIN_CTZL"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ETVvUE
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d7a40/fast && make -j8  -f CMakeFiles/cmTC_d7a40.dir/build.make CMakeFiles/cmTC_d7a40.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ETVvUE'
+        Building C object CMakeFiles/cmTC_d7a40.dir/src.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_BUILTIN_CTZL  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_d7a40.dir/src.c.o -MF CMakeFiles/cmTC_d7a40.dir/src.c.o.d -o CMakeFiles/cmTC_d7a40.dir/src.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ETVvUE/src.c
+        Linking C executable cmTC_d7a40
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7a40.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_d7a40.dir/src.c.o -o cmTC_d7a40  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-ETVvUE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFiles.cmake:137 (try_compile)"
+      - "CMakeLists.txt:366 (check_include_files)"
+    checks:
+      - "Looking for include file locale.h"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hTS2UG"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hTS2UG"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_LOCALE_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hTS2UG
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_97b0c/fast && make -j8  -f CMakeFiles/cmTC_97b0c.dir/build.make CMakeFiles/cmTC_97b0c.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hTS2UG'
+        Building C object CMakeFiles/cmTC_97b0c.dir/HAVE_LOCALE_H.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_97b0c.dir/HAVE_LOCALE_H.c.o -MF CMakeFiles/cmTC_97b0c.dir/HAVE_LOCALE_H.c.o.d -o CMakeFiles/cmTC_97b0c.dir/HAVE_LOCALE_H.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hTS2UG/HAVE_LOCALE_H.c
+        Linking C executable cmTC_97b0c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97b0c.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_97b0c.dir/HAVE_LOCALE_H.c.o -o cmTC_97b0c  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-hTS2UG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFiles.cmake:137 (try_compile)"
+      - "CMakeLists.txt:368 (check_include_files)"
+    checks:
+      - "Looking for include file stdlib.h"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-b6pNgD"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-b6pNgD"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_STDLIB_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-b6pNgD
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3bfad/fast && make -j8  -f CMakeFiles/cmTC_3bfad.dir/build.make CMakeFiles/cmTC_3bfad.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-b6pNgD'
+        Building C object CMakeFiles/cmTC_3bfad.dir/HAVE_STDLIB_H.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_3bfad.dir/HAVE_STDLIB_H.c.o -MF CMakeFiles/cmTC_3bfad.dir/HAVE_STDLIB_H.c.o.d -o CMakeFiles/cmTC_3bfad.dir/HAVE_STDLIB_H.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-b6pNgD/HAVE_STDLIB_H.c
+        Linking C executable cmTC_3bfad
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3bfad.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_3bfad.dir/HAVE_STDLIB_H.c.o -o cmTC_3bfad  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-b6pNgD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckIncludeFiles.cmake:137 (try_compile)"
+      - "CMakeLists.txt:369 (check_include_files)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-l8CVxh"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-l8CVxh"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "NEED_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-l8CVxh
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_35b17/fast && make -j8  -f CMakeFiles/cmTC_35b17.dir/build.make CMakeFiles/cmTC_35b17.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-l8CVxh'
+        Building C object CMakeFiles/cmTC_35b17.dir/NEED_SYS_TYPES_H.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_35b17.dir/NEED_SYS_TYPES_H.c.o -MF CMakeFiles/cmTC_35b17.dir/NEED_SYS_TYPES_H.c.o.d -o CMakeFiles/cmTC_35b17.dir/NEED_SYS_TYPES_H.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-l8CVxh/NEED_SYS_TYPES_H.c
+        Linking C executable cmTC_35b17
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35b17.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_35b17.dir/NEED_SYS_TYPES_H.c.o -o cmTC_35b17  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-l8CVxh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:373 (check_symbol_exists)"
+    checks:
+      - "Looking for memset"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tNokbS"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tNokbS"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_MEMSET"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tNokbS
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e237a/fast && make -j8  -f CMakeFiles/cmTC_e237a.dir/build.make CMakeFiles/cmTC_e237a.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tNokbS'
+        Building C object CMakeFiles/cmTC_e237a.dir/CheckSymbolExists.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE -MD -MT CMakeFiles/cmTC_e237a.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_e237a.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_e237a.dir/CheckSymbolExists.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tNokbS/CheckSymbolExists.c
+        Linking C executable cmTC_e237a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e237a.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_e237a.dir/CheckSymbolExists.c.o -o cmTC_e237a  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tNokbS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:145 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckSymbolExists.cmake:71 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:374 (check_symbol_exists)"
+    checks:
+      - "Looking for memcpy"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tjv9YI"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tjv9YI"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_MEMCPY"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tjv9YI
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4af12/fast && make -j8  -f CMakeFiles/cmTC_4af12.dir/build.make CMakeFiles/cmTC_4af12.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tjv9YI'
+        Building C object CMakeFiles/cmTC_4af12.dir/CheckSymbolExists.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE -MD -MT CMakeFiles/cmTC_4af12.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_4af12.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_4af12.dir/CheckSymbolExists.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tjv9YI/CheckSymbolExists.c
+        Linking C executable cmTC_4af12
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4af12.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_4af12.dir/CheckSymbolExists.c.o -o cmTC_4af12  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-tjv9YI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:380 (check_type_size)"
+    checks:
+      - "Check size of unsigned char"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9EZ4Mz"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9EZ4Mz"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_UNSIGNED_CHAR"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9EZ4Mz
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_30508/fast && make -j8  -f CMakeFiles/cmTC_30508.dir/build.make CMakeFiles/cmTC_30508.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9EZ4Mz'
+        Building C object CMakeFiles/cmTC_30508.dir/UNSIGNED_CHAR.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_30508.dir/UNSIGNED_CHAR.c.o -MF CMakeFiles/cmTC_30508.dir/UNSIGNED_CHAR.c.o.d -o CMakeFiles/cmTC_30508.dir/UNSIGNED_CHAR.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9EZ4Mz/UNSIGNED_CHAR.c
+        Linking C executable cmTC_30508
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_30508.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_30508.dir/UNSIGNED_CHAR.c.o -o cmTC_30508  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-9EZ4Mz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:148 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckTypeSize.cmake:273 (__check_type_size_impl)"
+      - "CMakeLists.txt:381 (check_type_size)"
+    checks:
+      - "Check size of unsigned short"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-K44pHL"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-K44pHL"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_UNSIGNED_SHORT"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-K44pHL
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_18750/fast && make -j8  -f CMakeFiles/cmTC_18750.dir/build.make CMakeFiles/cmTC_18750.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-K44pHL'
+        Building C object CMakeFiles/cmTC_18750.dir/UNSIGNED_SHORT.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_18750.dir/UNSIGNED_SHORT.c.o -MF CMakeFiles/cmTC_18750.dir/UNSIGNED_SHORT.c.o.d -o CMakeFiles/cmTC_18750.dir/UNSIGNED_SHORT.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-K44pHL/UNSIGNED_SHORT.c
+        Linking C executable cmTC_18750
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18750.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_18750.dir/UNSIGNED_SHORT.c.o -o cmTC_18750  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-K44pHL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:384 (check_c_source_compiles)"
+    checks:
+      - "Performing Test INCOMPLETE_TYPES"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0q61Am"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0q61Am"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "INCOMPLETE_TYPES"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0q61Am
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cef8b/fast && make -j8  -f CMakeFiles/cmTC_cef8b.dir/build.make CMakeFiles/cmTC_cef8b.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0q61Am'
+        Building C object CMakeFiles/cmTC_cef8b.dir/src.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DINCOMPLETE_TYPES  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_cef8b.dir/src.c.o -MF CMakeFiles/cmTC_cef8b.dir/src.c.o.d -o CMakeFiles/cmTC_cef8b.dir/src.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0q61Am/src.c
+        Linking C executable cmTC_cef8b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cef8b.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_cef8b.dir/src.c.o -o cmTC_cef8b  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-0q61Am'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:442 (check_c_source_compiles)"
+    checks:
+      - "Performing Test INLINE_WORKS"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XrscQr"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XrscQr"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "INLINE_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XrscQr
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_81860/fast && make -j8  -f CMakeFiles/cmTC_81860.dir/build.make CMakeFiles/cmTC_81860.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XrscQr'
+        Building C object CMakeFiles/cmTC_81860.dir/src.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DINLINE_WORKS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_81860.dir/src.c.o -MF CMakeFiles/cmTC_81860.dir/src.c.o.d -o CMakeFiles/cmTC_81860.dir/src.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XrscQr/src.c
+        Linking C executable cmTC_81860
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81860.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_81860.dir/src.c.o -o cmTC_81860  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-XrscQr'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:76 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:458 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_VERSION_SCRIPT"
+    directories:
+      source: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7QSuMK"
+      binary: "/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7QSuMK"
+    cmakeVariables:
+      ANDROID_ABI: "x86_64"
+      ANDROID_ARM_MODE: "thumb"
+      ANDROID_ARM_NEON: "ON"
+      ANDROID_PIE: "TRUE"
+      ANDROID_PLATFORM: "android-21"
+      ANDROID_STL: "c++_static"
+      ANDROID_TOOLCHAIN: "clang"
+      CMAKE_CXX_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_COMPILER_TARGET: "x86_64-none-linux-android21"
+      CMAKE_C_FLAGS: "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security "
+      CMAKE_POSITION_INDEPENDENT_CODE: "TRUE"
+      CMAKE_SYSROOT: "/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+    buildResult:
+      variable: "HAVE_VERSION_SCRIPT"
+      cached: true
+      stdout: |
+        Change Dir: /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7QSuMK
+        
+        Run Build Command(s):/usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_92ff4/fast && make -j8  -f CMakeFiles/cmTC_92ff4.dir/build.make CMakeFiles/cmTC_92ff4.dir/build
+        make[1]: Entering directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7QSuMK'
+        Building C object CMakeFiles/cmTC_92ff4.dir/src.c.o
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_VERSION_SCRIPT  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -Wl,--version-script,/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/conftest.map -fPIE -MD -MT CMakeFiles/cmTC_92ff4.dir/src.c.o -MF CMakeFiles/cmTC_92ff4.dir/src.c.o.d -o CMakeFiles/cmTC_92ff4.dir/src.c.o -c /home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7QSuMK/src.c
+        clang: warning: -Wl,--version-script,/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/conftest.map: 'linker' input unused [-Wunused-command-line-argument]
+        Linking C executable cmTC_92ff4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92ff4.dir/link.txt --verbose=1
+        /home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/lilipe/.buildozer/android/platform/android-ndk-r25b/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -Wl,--version-script,/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/conftest.map -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections   CMakeFiles/cmTC_92ff4.dir/src.c.o -o cmTC_92ff4  -latomic -lm 
+        make[1]: Leaving directory '/home/lilipe/Documents/graduacao/modsim/ep2/.buildozer/android/platform/build-arm64-v8a_armeabi-v7a_x86_x86_64/build/other_builds/jpeg/x86_64__ndk_target_21/jpeg/CMakeFiles/CMakeScratch/TryCompile-7QSuMK'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      yasm 1.3.0
+      Compiled on Aug 12 2022.
+      Copyright (c) 2001-2014 Peter Johnson and other Yasm developers.
+      Run yasm --license for licensing overview and summary.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Clang using "--version" did not match "(clang version)":
+      yasm 1.3.0
+      Compiled on Aug 12 2022.
+      Copyright (c) 2001-2014 Peter Johnson and other Yasm developers.
+      Run yasm --license for licensing overview and summary.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+      yasm 1.3.0
+      Compiled on Aug 12 2022.
+      Copyright (c) 2001-2014 Peter Johnson and other Yasm developers.
+      Run yasm --license for licensing overview and summary.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMClang using "--version" did not match "armclang":
+      yasm 1.3.0
+      Compiled on Aug 12 2022.
+      Copyright (c) 2001-2014 Peter Johnson and other Yasm developers.
+      Run yasm --license for licensing overview and summary.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is HP using "-V" did not match "HP C":
+      yasm: warning: unrecognized option `-V'
+      yasm: No input files specified
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is Intel using "--version" did not match "(ICC)":
+      yasm 1.3.0
+      Compiled on Aug 12 2022.
+      Copyright (c) 2001-2014 Peter Johnson and other Yasm developers.
+      Run yasm --license for licensing overview and summary.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      yasm 1.3.0
+      Compiled on Aug 12 2022.
+      Copyright (c) 2001-2014 Peter Johnson and other Yasm developers.
+      Run yasm --license for licensing overview and summary.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is SunPro using "-V" did not match "Sun C":
+      yasm: warning: unrecognized option `-V'
+      yasm: No input files specified
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is XL using "-qversion" did not match "XL C":
+      yasm: warning: unrecognized option `-qversion'
+      yasm: No input files specified
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is MSVC using "-?" did not match "Microsoft":
+      yasm: warning: unrecognized option `-?'
+      yasm: No input files specified
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is TI using "-h" did not match "Texas Instruments":
+      usage: yasm [option]* file
+      Options:
+          --version               show version text
+          --license               show license text
+          -h, --help              show help text
+          --arch=<arch>           select architecture (list with -a help)
+           -a <arch>
+          --parser=<parser>       select parser (list with -p help)
+           -p <parser>
+          --preproc=<preproc>     select preprocessor (list with -r help)
+           -r <preproc>
+          --oformat=<format>      select object format (list with -f help)
+           -f <format>
+          --dformat=<debug>       select debugging format (list with -g help)
+           -g <debug>
+          --lformat=<list>        select list format (list with -L help)
+           -L <list>
+          --list=<listfile>       name of list-file output
+           -l <listfile>
+          --objfile=<filename>    name of object-file output
+           -o <filename>
+          --mapfile=<filename>    name of map-file output
+          --machine=<machine>     select machine (list with -m help)
+           -m <machine>
+          --force-strict          treat all sized operands as if `strict' was used
+          -w                      inhibits warning messages
+          -W                      enables/disables warning
+          -M                      generate Makefile dependencies on stdout
+          -E <file>               redirect error messages to file
+          -s                      redirect error messages to stdout
+          -e, --preproc-only      preprocess only (writes output to stdout by default)
+          -i <path>               add include path
+          -I <path>               add include path
+          -P <filename>           pre-include file
+          -d <macro[=value]>      pre-define a macro, optionally to value
+          -D <macro[=value]>      pre-define a macro, optionally to value
+          -u <macro>              undefine a macro
+          -U <macro>              undefine a macro
+          -X <style>              select error/warning message style (`gnu' or `vc')
+          --prefix=<prefix>       prepend argument to name of all external symbols
+          --suffix=<suffix>       append argument to name of all external symbols
+          --postfix=<suffix>      append argument to name of all external symbols
+      
+      Files are asm sources to be assembled.
+      
+      Sample invocation:
+         yasm -f elf -o object.o source.asm
+      
+      Report bugs to bug-yasm@tortall.net
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is IAR using "" did not match "IAR Assembler":
+      yasm: No input files specified
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      yasm: No input files specified
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1115 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is NASM using "-v" did not match "(NASM version)":
+      yasm: warning: unrecognized option `-v'
+      yasm: No input files specified
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1102 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:127 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASM_NASMCompiler.cmake:29 (include)"
+      - "simd/CMakeLists.txt:41 (enable_language)"
+    message: |
+      Checking whether the ASM_NASM compiler is YASM using "--version" matched "(yasm)":
+      yasm 1.3.0
+      Compiled on Aug 12 2022.
+      Copyright (c) 2001-2014 Peter Johnson and other Yasm developers.
+      Run yasm --license for licensing overview and summary.
+...
