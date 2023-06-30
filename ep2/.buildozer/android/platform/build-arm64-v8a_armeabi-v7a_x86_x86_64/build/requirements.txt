@@ -1,9 +1,0 @@
-certifi
-chardet
-idna
-kivy_garden.graph
-lazy_loader
-packaging
-plyer
-requests
-urllib3
